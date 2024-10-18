@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Everyday with Isa</title>
-</head>
-<body>
-    <header>
-        <h1>An Insider's Guide to NYFW</h1>
-    </header>
-    <figure>
-        <a href="#footer"><img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/profile.jpg" alt=""></a>
-        <figcaption>by Isabelle Rodriguez | 1 day ago</figcaption>
-    </figure>
-    <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-one.jpeg" alt="">
-    <p><a href="https://en.wikipedia.org/wiki/New_York_Fashion_Week" target="_blank">NYFW</a> can be both amazingly fun & incredibly overwhelming, especially if you’ve never been. Luckily, I’m here to give you an insider’s guide and make your first show a pleasurable experience. By taking my tips and tricks, and following your gut, you’ll have an unforgettable experience!</p>
-    <h2>Getting Tickets & Picking the Shows</h2>
-    <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-two.jpeg" alt="">
-    <p>If you’re lucky or connected you can get an invite, sans the price tag. But I wasn’t so lucky or connected my first 2 years, so I’m here to help you out. First, plan out which shows are most important to you and make a schedule and this is a biggie: SET A BUDGET. If you’re worrying about blowing your cash the whole time you won’t have fun. Then check out prices, days, and times and prioritize the designers you want to see most. Lastly, purchase your tickets and get excited!</p>
-    <h2>Dressing for the Shows</h2>
-    <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-three.jpeg" alt="">
-    <p>Always be true to your own sense of style, if you don’t you’ll be uncomfortable the whole time and it will show. Remember, NYFW is about expressing yourself and taking in what the designers have chosen to express through their new lines. Also, it’s important to wear shoes you’ll be comfortable in all day. Obviously you want to look good, but you’ll be on your feet all day long, so be prepared.</p>
-    <h4>Related Content</h4>
-    <ul>
-        <li><a href="#">How to Style Boyfriend Jeans</a></li>
-        <li><a href="#">When Print Is Too Much</a></li>
-        <li><a href="#">The Overalls Trend</a></li>
-        <li><a href="#">Fall's It Color: Blush</a></li>
-    </ul>
-    <footer id="footer">
-        <p><strong>email</strong>: isa@fashionblog.com | <strong>phone</strong>: 917-555-1098 | <strong>address</strong>: 371 284th St, New York, NY, 10001</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Everyday with Isa</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>An Insider's Guide to NYFW</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="blog-intro">
+                <div class="owner-intro">
+                    <figure>
+                        <a href="#footer"><img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/profile.jpg" alt=""></a>
+                        <figcaption>by Isabelle Rodriguez | 1 day ago</figcaption>
+                    </figure>
+                </div>
+                <div class="intro-text">
+                    <p><a href="https://en.wikipedia.org/wiki/New_York_Fashion_Week" target="_blank">NYFW</a> can be both amazingly fun & incredibly overwhelming, especially if you’ve never been. Luckily, I’m here to give you an insider’s guide and make your first show a pleasurable experience. By taking my tips and tricks, and following your gut, you’ll have an unforgettable experience!</p>
+                </div>
+                <div class="intro">
+                    <figure>
+                        <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-one.jpeg" alt="">
+                        <figcaption>Helping you navigate NY fashion</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="container">
+                <section class="article-thumbnail left" onclick="openModal(this)" id="recent1">
+                    <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-two.jpeg" alt="">
+                    <div class="article-content">
+                        <h2>Getting Tickets & Picking the Shows</h2>
+                        <div class="date">Published on October 18, 2024, 3:00 PM</div>
+                        <p>If you’re lucky or connected, you can get an invite without the price tag. But I wasn’t, so here’s how to navigate it. First, plan which shows are most important and make a schedule. This is a biggie: SET A BUDGET. Worrying about money will ruin your fun. Then check prices, days, and times, and prioritize the designers you want to see. Lastly, purchase your tickets and get excited!</p>
+                    </div>
+                </section>
+
+                <section class="article-thumbnail second" onclick="openModal(this)" id="recent2">
+                    <div class="article-content">
+                        <h2>Dressing for the Shows</h2>
+                        <div class="date">Published on October 18, 2024, 3:00 PM</div>
+                        <p>If you’re lucky or connected you can get an invite, sans the price tag. But I wasn’t so lucky or connected my first 2 years, so I’m here to help you out. First, plan out which shows are most important to you and make a schedule and this is a biggie: SET A BUDGET. If you’re worrying about blowing your cash the whole time you won’t have fun. Then check out prices, days, and times and prioritize the designers you want to see most. Lastly, purchase your tickets and get excited!</p>
+                    </div>
+                    <img src="https://content.codecademy.com/courses/learn-html/elements-and-structure/image-three.jpeg" alt="">
+                </section>
+
+            </section>
+            
+    
+            <!-- Modal overlay for displaying the full article -->
+            <div class="modal-overlay" id="modal-overlay">
+                <div class="modal-content">
+                    <button class="modal-close" onclick="closeModal()">×</button>
+                    <h2></h2>
+                    <div class="date"></div>
+                    <p></p>
+                </div>
+            </div>
+
+            <section class="sidebar">
+                <h3> Recent Blogs </h3>
+                <ul>
+                    <li><a href="#recent1">Getting Tickets & Picking the Shows</a></li>
+                    <li><a href="#recent2">Dressing for the Shows</a></li>
+                    <li><a href="#">The Top 10 Fashion Trends of 2024</a></li>
+                    <li><a href="#">The 10 Best Winter Clothing Brands</a></li>
+                </ul>
+            </section>
+
+            <section class="related-content">
+                <h3>Related Content</h3>
+                <ul>
+                    <li><a href="#">How to Style Boyfriend Jeans</a></li>
+                    <li><a href="#">When Print Is Too Much</a></li>
+                    <li><a href="#">The Overalls Trend</a></li>
+                    <li><a href="#">Fall's It Color: Blush</a></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <p><strong>email</strong>: isa@fashionblog.com | <strong>phone</strong>: 917-555-1098 | <strong>address</strong>: 371 284th St, New York, NY, 10001</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
 </html>
