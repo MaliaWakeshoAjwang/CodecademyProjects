@@ -2,6 +2,7 @@
 
 ## Projects
 - Fashion Blog
+- Wine Festival Schedule
 
 ### Project 1: Fashion Blog
 #### Description
@@ -20,3 +21,9 @@ Beyond the initial specifications, I:
 - Converted the blog entries into interactive thumbnails to streamline the browsing experience:
   - Added JavaScript elements for mouse interaction, making the thumbnails responsive.
   - Enabled a "pop-out" window effect when thumbnails are clicked for an immersive experience.
+
+  ### Project 2: Wine Festival Schedule
+  #### Description
+  The Aguillar Family is hosting their annual wine festival and they have asked you to build a web page for the event schedule! Use your knowledge of HTML to display a table to the attendees.
+
+  
